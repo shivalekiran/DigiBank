@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DigiBank</string>
+    <string name="about_us_text_value">DigiBank एक एजुकेशनल प्लेटफॉर्म है - नकली ऑनलाइन बैंकिंग प्लेटफॉर्म। नेट बैंकिंग या इंटरनेट बैंकिंग अधिक से अधिक लोकप्रिय हो रही है। बैंकिंग अधिक डिजिटल हो रही है और इसलिए बैंक शाखाओं में कमी - यह उपभोक्ताओं के समय और प्रयासों को बचा रहा है। यह नेट बैंकिंग का उपयोग शुरू करने के लिए सर्वोत्कृष्ट है। डिजीबैंक एक शैक्षणिक मंच है - नकली ऑनलाइन बैंकिंग मंच। नेट बैंकिंग या इंटरनेट बैंकिंग अधिक से अधिक लोकप्रिय हो रही है। बैंकिंग अधिक डिजिटल हो रही है और इसलिए बैंक शाखाओं में कमी - यह उपभोक्ताओं के समय और प्रयासों को बचा रहा है। शुद्ध बैंकिंग का उपयोग शुरू करना सर्वोत्कृष्ट है।
+</string>
+    <string name="about_us_text_small_value">"This simulated environment allows user to learn how to use netbanking instead of experimenting on real platform with real money - here user will get dummy account with virtual cash to make the concept and procedure more familiar with more quality information about net banking. There will be step by step assistance and warning against negative effect.  "</string>
+    <string name="get_in_touch">Get in Touch</string>
+    <string name="about_digibank">ABOUT DIGIBANK</string>
+    <string name="our_courses">OUR COURCES</string>
+    <string name="netbanking_overview">Netbanking Overview</string>
+    <string name="about">About</string>
+    <string name="digibank">DigiBank</string>
+    <string name="email_error_msg">Enter valid email.</string>
+    <string name="password_error_msg">Enter password</string>
+    <string name="netbanking_overview_cource">EVERYTHING THAT YOU NEED TO KNOW ABOUT NETBANKING IN THE EASIEST WAY Lets Go through basics about netbanking/ internet banking before you get started... (Please note these are the basic instruction while using netbanking on real platform) Step 1 : Make sure that your computer is connected to internet. Step 2: Go to Your banks website Step 3: Login to bank Account - every bank has slightly different convention but something similar to netbanking Login or Internet Bank Login etc. Login Generally bank gives welcome KIT on account opening which has user ID/Customer ID to login. Few banks gives password along with Welcome Kit on first login need to change - Few banks sends OTP to registered mobile number to create password. Generic steps to Login Enter your customer Number - which you get with New Account opening KIT. Confirm your registered mobile Number ( Domestic Mobile Number ) Input OTP ( One Time Password) which you have received on your mobile Select and Input Debit card details. Set your IPIN ( Every bank has slight different method to register but above steps are there in general or in combinations) Safety precautions Never share PIN , Card Number , OTP, Password with anybody - bank never ask for such details via phone, email or in person. Change browser settings to off auto complete and remember login details. Change password after first time login Keep changing password periodically Password should be complex - difficult to guess Do not use same password for other portal logins. Internet Banking / Netbanking Features Internet banking offers over 250+ services and facilities that give you real-time access to your account. You can make payments to your account, open fixed and recurring deposits, view account details, request cheque book and a lot more, while you are online. Generic feature list Balance Enquiry Download account Statement Online bill Payment Manage Payee Transfer Fund Request Cheque book, stop payment of cheque etc Open Deposit With this overview, lets start using simulated online bank or play online banking game to understand Internet banking high level features and how to use it with assistance and warnings..</string>
+    <string name="back">Back</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name*</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="email">Email*</string>
+    <string name="mobile_no">Mobile No*</string>
+    <string name="address">Address</string>
+    <string name="occupation">Occupation</string>
+    <string name="username">Username*</string>
+    <string name="password">Password*</string>
+    <string name="confirm_password">Confirm Password*</string>
+    <string name="submit">Submit</string>
+    <string name="policy_text">By signing up, you agreed out Terms of services and Privacy Policy</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_6_characters_alphanumberic">Enter 6 Characters alphanumberic</string>
+    <string name="password_text">Password</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/account_overview_item">
+
+    <fragment
+        android:id="@+id/account_overview_item"
+        android:name="com.fixsolservices.digibank.ui.netbanking.accountoverview.AccountOverviewFragment"
+        tools:layout="@layout/fragment_account_overview" />
+
+    <fragment
+        android:id="@+id/fund_transfer_item"
+        android:name="com.fixsolservices.digibank.ui.netbanking.fund.FundTransferFragment"
+        tools:layout="@layout/fragment_fund_transfer">
+        <action
+            android:id="@+id/action_fund_transfer_another_acc_same_bank"
+            app:destination="@id/another_acc_same_bank"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fund_transfer_item_to_toOtherBankFragment"
+            app:destination="@id/toOtherBankFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manage_payee_item"
+        android:name="com.fixsolservices.digibank.ui.netbanking.mpayee.ManagePayeeFragment"
+        tools:layout="@layout/fragment_manage_payee">
+        <action
+            android:id="@+id/action_manage_payee_item_to_managePayeeConfirmDetailsFragment"
+            app:destination="@id/managePayeeConfirmDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/e_statement_item"
+        android:name="com.fixsolservices.digibank.ui.netbanking.estate.EStatementFragment"
+        tools:layout="@layout/fragment_e_statement" />
+
+
+    <fragment
+        android:id="@+id/another_acc_same_bank"
+        android:name="com.fixsolservices.digibank.ui.netbanking.fund.AnotherAccSameBank"
+        tools:layout="@layout/fragment_fund_transfer_to_bank_acc">
+        <action
+            android:id="@+id/action_another_acc_same_bank_to_confirmOtherAccSameBankFragment"
+            app:destination="@id/confirmOtherAccSameBankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmOtherAccSameBankFragment"
+        android:name="com.fixsolservices.digibank.ui.netbanking.fund.ConfirmOtherAccSameBankFragment"
+        tools:layout="@layout/fragment_confirm_other_acc_same_bank">
+        <action
+            android:id="@+id/action_confirmOtherAccSameBankFragment_to_otpOtherAccSameBankFragment"
+            app:destination="@id/otpOtherAccSameBankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpOtherAccSameBankFragment"
+        android:name="com.fixsolservices.digibank.ui.netbanking.fund.OtpOtherAccSameBankFragment"
+        tools:layout="@layout/fragment_otp_other_acc_same_bank">
+        <action
+            android:id="@+id/action_otpOtherAccSameBankFragment_to_EReceiptAnotherAccSameBankFragment"
+            app:destination="@id/EReceiptAnotherAccSameBankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EReceiptAnotherAccSameBankFragment"
+        android:name="com.fixsolservices.digibank.ui.netbanking.fund.EReceiptAnotherAccSameBankFragment"
+        tools:layout="@layout/fragment_e_receipt_another_acc_same_bank">
+        <action
+            android:id="@+id/action_EReceiptAnotherAccSameBankFragment_to_fund_transfer_item"
+            app:destination="@id/fund_transfer_item"
+            app:popUpTo="@id/fund_transfer_item"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/toOtherBankFragment"
+        android:name="com.fixsolservices.digibank.ToOtherBankFragment"
+        tools:layout="@layout/fragment_to_other_bank">
+        <action
+            android:id="@+id/action_toOtherBankFragment_to_toOtherBankConfirmDetailsFragment"
+            app:destination="@id/toOtherBankConfirmDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toOtherBankConfirmDetailsFragment"
+        android:name="com.fixsolservices.digibank.ToOtherBankConfirmDetailsFragment"
+        tools:layout="@layout/fragment_to_other_bank_confirm_details">
+        <action
+            android:id="@+id/action_toOtherBankConfirmDetailsFragment_to_atmDebitCardFragment"
+            app:destination="@id/atmDebitCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/atmDebitCardFragment"
+        android:name="com.fixsolservices.digibank.AtmDebitCardFragment"
+        tools:layout="@layout/fragment_atm_debit_card">
+        <action
+            android:id="@+id/action_atmDebitCardFragment_to_otpOtherAccSameBankFragment"
+            app:destination="@id/otpOtherAccSameBankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/managePayeeConfirmDetailsFragment"
+        android:name="com.fixsolservices.digibank.ManagePayeeConfirmDetailsFragment"
+        tools:layout="@layout/fragment_manage_payee_confirm_details">
+        <action
+            android:id="@+id/action_managePayeeConfirmDetailsFragment_to_urnVerificationFragment"
+            app:destination="@id/urnVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/urnVerificationFragment"
+        android:name="com.fixsolservices.digibank.UrnVerificationFragment"
+        tools:layout="@layout/fragment_urn_verification">
+        <action
+            android:id="@+id/action_urnVerificationFragment_to_toOtherBankFragment"
+            app:destination="@id/toOtherBankFragment"
+            app:popUpTo="@id/manage_payee_item"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

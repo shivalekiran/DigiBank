@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.SuccessMsgFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/group">
+
+        <ImageView
+            android:id="@+id/success_tick_img"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/ic_success" />
+
+        <TextView
+            android:id="@+id/success_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/success_tick_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Success"
+            android:textColor="#6AB04C"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/success_msg_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/success_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:gravity="center"
+            android:text="Success"
+            android:textColor="#4966B7" />
+    </RelativeLayout>
+</LinearLayout>

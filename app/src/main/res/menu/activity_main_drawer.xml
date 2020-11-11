@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/account_overview_item"
+            android:icon="@drawable/ic_account_overview"
+            android:title="Account Overview" />
+        <item
+            android:id="@+id/fund_transfer_item"
+            android:icon="@drawable/ic_fund_transfer"
+            android:title="Fund Transfer" />
+        <item
+            android:id="@+id/manage_payee_item"
+            android:icon="@drawable/ic_manage_payee"
+            android:title="Manage Payee" />
+        <item
+            android:id="@+id/e_statement_item"
+            android:icon="@drawable/ic_e_statement"
+            android:title="E-Statement" />
+    </group>
+</menu>

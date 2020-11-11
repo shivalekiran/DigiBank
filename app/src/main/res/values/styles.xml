@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/appBlueColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@string/font_poppins</item>
+        <item name="android:autofilledHighlight" tools:targetApi="o">@color/transparent</item>
+    </style>
+
+    <style name="TitleTextViewStyle" parent="AppTheme">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/appBlueColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ActivityTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="DrawerLayoutActivityStyle" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="colorPrimary">@color/green_gradient_start_end</item>
+        <item name="colorPrimaryDark">@color/appBlueColor</item>
+        <item name="colorAccent">@color/list_bg_1</item>
+        <item name="fontFamily">@string/font_poppins</item>
+        <item name="android:autofilledHighlight" tools:targetApi="o">@color/transparent</item>
+    </style>
+
+    <!--    FOR CHANGING THE STATUS BAR COLOR FOR LANGUAGE SELECTION ACTIVITY-->
+    <style name="LanguageActivityTheme" parent="ActivityTheme">
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="fontFamily">@string/font_poppins</item>
+        <item name="android:textColorSecondary">@color/appDarkBlueColor</item>
+        <item name="drawerArrowStyle">@style/DrawableItemStyle</item>
+    </style>
+
+    <!--   EDIT TEXT STYLE  -->
+    <style name="EditTextBase">
+        <item name="hintTextColor">@color/hintTextColor</item>
+        <item name="height">48dp</item>
+        <item name="android:paddingStart">23dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <!--BUTTON STYLE-->
+    <style name="AppButtonStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/blue_square_button_drawable</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+    </style> <!--BUTTON STYLE-->
+    <style name="AccDetailsTitleStyle">
+        <item name="android:textColor">@color/appBlueColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ConfirmCardBoldTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textColor">@color/netbankingGray</item>
+    </style>
+    <style name="ConfirmCardNormalTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textColor">@color/netbankingGray</item>
+    </style>
+
+    <style name="FTOBNormalTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textColor">@color/netbankingGray</item>
+    </style>
+
+    <style name="NetBankingTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textBlueColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--NAVIGATION ITEM STYLE-->
+    <style name="DrawableItemStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="fontFamily">@string/font_poppins</item>
+        <item name="color">@color/appBlueColor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DropDownTextViewStyle" parent="EditTextBase">
+        <item name="android:background">@drawable/white_square_button_drawable</item>
+        <item name="android:drawableRight">@drawable/ic_down</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

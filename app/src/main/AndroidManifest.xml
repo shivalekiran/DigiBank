@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fixsolservices.digibank">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".DigiBankApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:configChanges="locale"
+            android:name=".ui.netbanking.NetbakingOverviewActivity"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+        <activity
+            android:name=".ui.netbankinglogin.NetBankingLoginActivity"
+            android:theme="@style/LanguageActivityTheme" />
+        <activity
+            android:name=".ui.forgotpass.ForgotPasswordActivity"
+            android:theme="@style/LanguageActivityTheme" />
+        <activity
+            android:name=".ui.language.LanguageActivity"
+            android:theme="@style/LanguageActivityTheme" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/LanguageActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.signup.SignUpActivity"
+            android:theme="@style/LanguageActivityTheme"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.NetBankingActivity"
+            android:theme="@style/LanguageActivityTheme" />
+        <activity
+            android:name=".ui.contact.ContactActivity"
+            android:theme="@style/LanguageActivityTheme" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:theme="@style/LanguageActivityTheme" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:theme="@style/ActivityTheme" />
+    </application>
+
+</manifest>
