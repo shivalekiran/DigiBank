@@ -76,6 +76,7 @@
                         android:hint="@string/enter_6_characters_alphanumberic"
                         android:inputType="textCapCharacters"
                         android:maxLength="6"
+                        android:text="AFBCH323"
                         android:minHeight="50dp"
                         android:singleLine="true" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -125,6 +126,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/password_text"
+                        android:text="12345"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
             </RelativeLayout>

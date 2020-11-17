@@ -28,9 +28,9 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
-        android:padding="10dp"
         android:background="@drawable/acc_overview_bg"
         android:gravity="start"
+        android:padding="10dp"
         android:text="Your Online Banking session will automatically 'time out' after 10 minutes of inactivity. This security feature is intended to prevent another individual from viewing your account information while your computer is unattended."
         app:layout_constraintTop_toBottomOf="@+id/text_home" />
 
@@ -145,10 +145,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        card_view:elevation="0dp"
-        card_view:cardCornerRadius="5dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/card_acc_details">
+        app:layout_constraintTop_toBottomOf="@id/card_acc_details"
+        card_view:cardCornerRadius="5dp"
+        card_view:elevation="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -208,7 +208,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TotalAmount"
+                    android:text="PaymentId"
                     android:textSize="8sp" />
 
                 <TextView
@@ -216,39 +216,45 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.8"
                     android:gravity="center"
-                    android:text="Satus"
+                    android:text="Status"
                     android:textSize="8sp" />
             </LinearLayout>
 
-            <View
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myTransactionRecycleView"
                 android:layout_width="match_parent"
-                android:layout_height="25sp"
-                android:background="@color/list_bg_1" />
+                android:layout_height="wrap_content"
+                android:minHeight="150dp" />
+            <!--
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="25sp"
+                            android:background="@color/list_bg_1" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="25sp"
-                android:background="@color/list_bg_2" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="25sp"
+                            android:background="@color/list_bg_2" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="25sp"
-                android:background="@color/list_bg_1" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="25sp"
+                            android:background="@color/list_bg_1" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="25sp"
-                android:background="@color/list_bg_2" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="25sp"
+                            android:background="@color/list_bg_2" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="25sp"
-                android:background="@color/list_bg_1" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="25sp"
+                            android:background="@color/list_bg_1" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="25sp"
-                android:background="@color/white" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="25sp"
+                            android:background="@color/white" />-->
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -258,11 +264,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        card_view:elevation="0dp"
-        card_view:cardCornerRadius="5dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/card_transaction_details">
+        app:layout_constraintTop_toBottomOf="@id/card_transaction_details"
+        card_view:cardCornerRadius="5dp"
+        card_view:elevation="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -350,7 +356,15 @@
                     android:textSize="8sp" />
             </LinearLayout>
 
-            <View
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myFundRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp" />
+
+           <!-- <View
                 android:layout_width="match_parent"
                 android:layout_height="25sp"
                 android:background="@color/list_bg_1" />
@@ -378,7 +392,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="25sp"
-                android:background="@color/white" />
+                android:background="@color/white" />-->
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

@@ -1,9 +1,9 @@
 package com.fixsolservices.digibank.di
 
+import com.fixsolservices.digibank.di.accoverview.AccOverviewViewModelsModule
+import com.fixsolservices.digibank.di.accoverview.AccountOverviewBuilderModule
 import com.fixsolservices.digibank.di.login.LoginModule
 import com.fixsolservices.digibank.di.login.LoginViewModelModule
-import com.fixsolservices.digibank.di.main.MainModule
-import com.fixsolservices.digibank.di.main.MainViewModelModule
 import com.fixsolservices.digibank.ui.NetBankingActivity
 import com.fixsolservices.digibank.ui.SplashActivity
 import com.fixsolservices.digibank.ui.forgotpass.ForgotPasswordActivity
@@ -27,12 +27,7 @@ abstract class ActivityBuildersModule {
     )
     abstract fun injectAuthActivity(): LoginActivity
 
-    @ContributesAndroidInjector(
-        /* modules = [
-             MainViewModelModule::class,
-             MainModule::class
-         ]*/
-    )
+    @ContributesAndroidInjector(    )
     abstract fun injectMainActivity(): MainActivity
 
     @ContributesAndroidInjector
@@ -50,7 +45,12 @@ abstract class ActivityBuildersModule {
     @ContributesAndroidInjector
     abstract fun injectNetBankingActivity(): NetBankingActivity
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(
+        modules = [
+            AccountOverviewBuilderModule::class
+            , AccOverviewViewModelsModule::class
+        ]
+    )
     abstract fun injectNetbakingOverviewActivity(): NetbakingOverviewActivity
 
     @ContributesAndroidInjector
