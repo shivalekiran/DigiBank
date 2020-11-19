@@ -40,7 +40,7 @@ class MyTransactionsAdapter(private val transactions: List<MyTransaction>) :
             TransactionsDate.text = myTransaction.transactionDate
             TransactionsType.text = myTransaction.transactionType
             PayeeName.text = myTransaction.payee
-            TotalAmount.text = "${myTransaction.totalAmount}"
+            TotalAmount.text = myTransaction.totalAmountString
             PaymentId.text = "${myTransaction.paymentId}"
             Status.text = myTransaction.status
 

@@ -63,6 +63,7 @@ class AccountOverviewFragment : DaggerFragment() {
         accOverviewViewModel.myFunds.observe(viewLifecycleOwner, Observer { dataState ->
             when (dataState) {
                 is DataState.Success -> {
+                    fundTransferList.clear()
                     fundTransferList.addAll(dataState.data)
                     fundTransferAdapter.notifyDataSetChanged()
                 }
@@ -93,6 +94,7 @@ class AccountOverviewFragment : DaggerFragment() {
         accOverviewViewModel.myTransaction.observe(viewLifecycleOwner, Observer { dataState ->
             when (dataState) {
                 is DataState.Success -> {
+                    transactionList.clear()
                     transactionList.addAll(dataState.data)
                     transactionAdapter.notifyDataSetChanged()
                 }

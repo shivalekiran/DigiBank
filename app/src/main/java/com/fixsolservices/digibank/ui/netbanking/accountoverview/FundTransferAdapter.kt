@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.fixsolservices.digibank.R
 import com.fixsolservices.digibank.database.bank.fund.FundTransfer
-import com.fixsolservices.digibank.database.bank.transactions.MyTransaction
 
 
 class FundTransferAdapter(private val transactions: List<FundTransfer>) :
@@ -17,7 +16,7 @@ class FundTransferAdapter(private val transactions: List<FundTransfer>) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val myTransactionItem =
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.my_transactions_item_layout, parent, false)
+                .inflate(R.layout.fund_transfer_item_layout, parent, false)
         return MyViewHolder(myTransactionItem)
     }
 
@@ -35,16 +34,14 @@ class FundTransferAdapter(private val transactions: List<FundTransfer>) :
         val TransactionsDate: TextView = item.findViewById(R.id.TransactionsDate)
         val TransactionsType: TextView = item.findViewById(R.id.TransactionsType)
         val PayeeName: TextView = item.findViewById(R.id.PayeeName)
-        val TotalAmount: TextView = item.findViewById(R.id.TotalAmount)
-        val PaymentId: TextView = item.findViewById(R.id.PaymentId)
-        val Status: TextView = item.findViewById(R.id.Status)
-        fun bindViewData(myTransaction: FundTransfer) {
-            TransactionsDate.text = myTransaction.date
-            TransactionsType.text = myTransaction.transactionType
-            PayeeName.text = myTransaction.payee
-            TotalAmount.text = "${myTransaction.amount}"
-            PaymentId.text = myTransaction.beneficiaryDetails
-
+        val BeneficialDetails: TextView = item.findViewById(R.id.beneficial_details)
+        val AmmountInr: TextView = item.findViewById(R.id.ammount_inr)
+        fun bindViewData(fundTransfer: FundTransfer) {
+            TransactionsDate.text = fundTransfer.date
+            TransactionsType.text = fundTransfer.transactionType
+            PayeeName.text = fundTransfer.payee
+            BeneficialDetails.text = fundTransfer.beneficiaryDetails
+            AmmountInr.text = fundTransfer.amountString
         }
 
     }
