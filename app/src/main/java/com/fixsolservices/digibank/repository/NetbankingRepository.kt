@@ -42,8 +42,8 @@ class NetbankingRepository @Inject constructor(
             var fundTransfer: FundTransfer
             for (i in 0..4) {
                 fundTransfer = FundTransfer(
-                    date = Utils.getTransactionType(i),
-                    transactionType = Utils.getRandomCapText(),
+                    date = Utils.getDateBefore(i),
+                    transactionType = Utils.getTransactionType(i),
                     payee = Utils.getRandomCapText(),
                     beneficiaryDetails = Utils.getRandomCapText()
                 )
@@ -57,8 +57,8 @@ class NetbankingRepository @Inject constructor(
             var myTransaction: MyTransaction
             for (i in 0..4) {
                 myTransaction = MyTransaction(
-                    transactionDate = Utils.getTransactionType(i),
-                    transactionType = Utils.getRandomCapText(),
+                    transactionDate = Utils.getDateBefore(i),
+                    transactionType = Utils.getTransactionType(i),
                     payee = Utils.getRandomCapText()
                 )
                 val insertTransaction = myTransactionsDao.insertTransaction(myTransaction)

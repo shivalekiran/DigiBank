@@ -303,7 +303,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="6">
+                android:weightSum="5">
 
                 <TextView
                     android:layout_width="0dp"
@@ -311,7 +311,7 @@
                     android:layout_weight="1.1"
                     android:gravity="center"
                     android:singleLine="true"
-                    android:text="Transactions Date"
+                    android:text="Date"
                     android:textSize="8sp" />
 
                 <TextView
@@ -328,7 +328,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="PayeeName"
+                    android:text="Payee Name"
                     android:textSize="8sp" />
 
                 <TextView
@@ -336,23 +336,16 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TotalAmount"
+                    android:text="Beneficiary Details"
                     android:textSize="8sp" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="TotalAmount"
-                    android:textSize="8sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.8"
                     android:gravity="center"
-                    android:text="Satus"
+                    android:text="Ammount(INR)"
                     android:textSize="8sp" />
             </LinearLayout>
 

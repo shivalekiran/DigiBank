@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/select_acc_linear_layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/blue_square_button_drawable"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/acc_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:text="Salary Account(INR) 001xxxxxx"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/acc_current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:text="Current Account(INR) 002xxxxxxx"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -77,7 +77,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:minHeight="50dp"
-                    android:onClick="onSelectAccViewClick"
                     android:text="Salary Account(INR) 001xxxxxx"
                     android:textColor="@color/white" />
 
@@ -91,7 +90,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:onClick="onSelectAccViewClick"
                     android:minHeight="50dp"
                     android:text="Current Account(INR) 002xxxxxxx"
                     android:textColor="@color/white" />

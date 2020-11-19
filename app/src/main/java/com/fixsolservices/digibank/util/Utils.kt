@@ -25,9 +25,13 @@ object Utils {
     fun getRandomCapText(): String {
         val stringBuilder = StringBuilder()
         for (i in 0..4) {
-            val d = ALPHABET_STRING.length * Math.random().toInt()
-            stringBuilder.append(ALPHABET_STRING[d])
-
+            stringBuilder.append(
+                ALPHABET_STRING[
+                        Random().nextInt(
+                            ALPHABET_STRING.length
+                        )
+                ]
+            )
         }
         return stringBuilder.toString()
     }
